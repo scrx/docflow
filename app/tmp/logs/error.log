@@ -1,0 +1,13 @@
+2013-03-21 22:52:28 Error: [MissingComponentException] Component class Component could not be found.
+Exception Attributes: array (
+  'class' => 'Component',
+  'plugin' => false,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/docflow/lib/Cake/Controller/ComponentCollection.php(53): ComponentCollection->load('', Array)
+#1 /var/www/docflow/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(PagesController))
+#2 /var/www/docflow/lib/Cake/Routing/Dispatcher.php(183): Controller->constructClasses()
+#3 /var/www/docflow/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#4 /var/www/docflow/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
